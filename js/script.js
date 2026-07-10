@@ -8,3 +8,17 @@ function toggleMenu() {
 function toggleTheme() {
     document.body.classList.toggle("light-mode");
 }
+function selectRepair(type) {
+
+    document.getElementById("mailRepair").classList.remove("active");
+    document.getElementById("dropRepair").classList.remove("active");
+
+    if (type === "mail") {
+        document.getElementById("mailRepair").classList.add("active");
+    }
+
+    if (type === "dropoff") {
+        document.getElementById("dropRepair").classList.add("active");
+    }
+
+}
